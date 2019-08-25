@@ -11,6 +11,8 @@ body{
     
 }
 
+
+
 h1{
     display: inline-block;
 }
@@ -29,10 +31,13 @@ a{
     padding: 20px;
 }
 
+
+
 #diary{
     width: 100%;
     height: 100vh;
     background-color: #727CC3;
+    position: relative;
 }
 
 .view {
@@ -283,6 +288,7 @@ a{
     width: 100%;
     height: 100vh;
     background-color: #00897B;
+    position: relative;
 }
 
 #button{
@@ -520,3 +526,30 @@ a{
  }
  
 }
+
+#sidebar1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    width: 30%;
+    height: 100vh;
+    opacity: 0.5;
+
+}
+
+#square{
+   width: 70%;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+
+#sidebar2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:#fff;
+    
+}
+
+
