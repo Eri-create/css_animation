@@ -302,3 +302,221 @@ a{
     height: 100vh;
     background-color: #455A64;
 }
+
+
+.slider a {
+  text-decoration: none;
+  color: fff;
+}
+.slider {
+  height: 400px;
+  width: 800px;
+  background: url(http://lorempixum.com/800/400/sports/8);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px auto;
+ 
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.panel {
+  width: 200px;
+  height: 400px;
+  background: transparent;
+  color: transparent;
+  float: left;
+  overflow: hidden;
+ 
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  -moz-transition: color 0.5s ease, background-color 0.5s ease;
+  -o-transition: color 0.5s ease, background-color 0.5s ease;
+  -ms-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.panel h2 {
+  font: bold 35px/1.5 Helvetica, Verdana, sans-serif;
+  width: 150px;
+  margin: 55px auto 0 auto;
+}
+ 
+.panel p {
+  font: 200 11px/1.5 Helvetica, Verdana, sans-serif;
+  width: 150px;
+  margin: 0 auto;
+}
+.panel:hover {
+  background: #000; /*for old browsers*/
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+
+.slider {
+  height: 400px;
+  width: 800px;
+  background: url(MyWebsite23.jpeg);
+  background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0px;
+    background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px auto;
+ 
+/*
+  -webkit-animation: slider 15s infinite;
+  -moz-animation: slider 15s infinite;
+  -ms-animation: slider 15s infinite;
+  -o-animation: slider 15s infinite;
+  animation: slider 15s infinite;
+*/
+ 
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+@keyframes "slider" {
+ 0% {
+    background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 23% {
+    background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+    background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+    background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+    background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+    background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+    background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}
+@keyframes "slider" {
+ 0% {
+    background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 23% {
+    background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+    background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+    background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+    background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+    background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+    background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}
+ 
+@-moz-keyframes slider {
+ 0% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 20% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+   background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}
+ 
+@-webkit-keyframes "slider" {
+ 0% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 20% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+   background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}
+@-ms-keyframes "slider" {
+ 0% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 20% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+   background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}
+ 
+@-o-keyframes "slider" {
+ 0% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 20% {
+   background-position: 0px 0px, 800px 0px, 1600px 0px, 3200px 0;
+ }
+ 33% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 56% {
+   background-position: -800px 0px, 0px 0px, 800px 0px, 1600px 0;
+ }
+ 66% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 90% {
+   background-position: -1600px 0px, -800px 0px, 0px 0px, 800px 0;
+ }
+ 100% {
+   background-position: -3200px 0px, -1600px 0px, -800px 0px, 0px 0;
+ }
+ 
+}

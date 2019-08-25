@@ -1,2 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+/* line 12, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+h1 {
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  color: #333; }
+
+/* line 20, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto; }
+  /* line 28, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0; }
+    /* line 36, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li {
+      display: table-cell;
+      vertical-align: bottom;
+      position: relative;
+      width: 16.666%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 500ms ease; }
+      /* line 49, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+      .accordion ul li div {
+        display: block;
+        overflow: hidden;
+        width: 100%; }
+        /* line 55, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+        .accordion ul li div a {
+          display: block;
+          height: 250px;
+          width: 100%;
+          position: relative;
+          z-index: 3;
+          vertical-align: bottom;
+          padding: 15px 20px;
+          box-sizing: border-box;
+          color: #fff;
+          text-decoration: none;
+          font-family: Open Sans, sans-serif;
+          transition: all 200ms ease; }
+          /* line 72, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+          .accordion ul li div a * {
+            opacity: 0;
+            margin: 0;
+            width: 100%;
+            text-overflow: ellipsis;
+            position: relative;
+            z-index: 5;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
+          /* line 92, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+          .accordion ul li div a h2 {
+            font-family: Montserrat,sans-serif;
+            text-overflow: clip;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            top: 160px; }
+          /* line 104, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+          .accordion ul li div a p {
+            top: 160px;
+            font-size: 13.5px; }
+    /* line 118, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(1) {
+      background-image: url("Tokyo.jpeg"); }
+    /* line 119, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(2) {
+      background-image: url("Paris.jpeg"); }
+    /* line 120, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(3) {
+      background-image: url("Shanghai.jpeg"); }
+    /* line 121, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(4) {
+      background-image: url("NewYork.jpeg"); }
+    /* line 122, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(5) {
+      background-image: url("London.jpeg"); }
+    /* line 123, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:nth-child(6) {
+      background-image: url("Dubai.jpeg"); }
+    /* line 125, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul:hover li,
+    .accordion ul:focus-within li {
+      width: 8%; }
+    /* line 128, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li:focus {
+      outline: none; }
+    /* line 132, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul:hover li:hover,
+    .accordion ul li:focus,
+    .accordion ul:focus-within li:focus {
+      width: 60%; }
+      /* line 139, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+      .accordion ul:hover li:hover a,
+      .accordion ul li:focus a,
+      .accordion ul:focus-within li:focus a {
+        background: rgba(0, 0, 0, 0.4); }
+        /* line 143, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+        .accordion ul:hover li:hover a *,
+        .accordion ul li:focus a *,
+        .accordion ul:focus-within li:focus a * {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          transform: translateX(0); }
+    /* line 155, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul:hover li {
+      width: 8% !important; }
+      /* line 158, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+      .accordion ul:hover li a * {
+        opacity: 0 !important; }
+    /* line 161, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul:hover li:hover {
+      width: 60% !important; }
+      /* line 164, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+      .accordion ul:hover li:hover a {
+        background: rgba(0, 0, 0, 0.4); }
+        /* line 168, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+        .accordion ul:hover li:hover a * {
+          opacity: 1 !important;
+          -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+@media screen and (max-width: 600px) {
+  /* line 187, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+  body {
+    margin: 0; }
+  /* line 189, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+  .accordion {
+    height: auto; }
+    /* line 195, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none; } }
+
+/* line 213, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666; }
+  /* line 220, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+  .about a {
+    color: blue;
+    text-decoration: none; }
+    /* line 225, /Users/murayasueri/Desktop/MyWebSite2/style.scss */
+    .about a:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
